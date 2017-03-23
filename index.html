@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Stress Test</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Stress Test</h2>
+      </div>
+      <form id="stress-survey">
+        <div class="form-group">
+          <p>I have experienced these warning signs:</p>
+          <div class="checkbox">
+            <label><input type="checkbox" name="warning" value="lossOfSleep">Loss of sleep</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="warning" value="overwhelmed">Feeling overwhelmed</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="warning" value="hairLoss">Hair loss</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="warning" value="appetiteChange">Change in appetite</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>I have experienced these coping:</p>
+          <div class="checkbox">
+            <label><input type="checkbox" name="symptoms" value="bloodPressure">High blood pressure</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="symptoms" value="anxiety">Anxiety</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="symptoms" value="shingles">Shingles</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="symptoms" value="headaches">Headaches</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>I use these coping methods:</p>
+          <div class="checkbox">
+            <label><input type="checkbox" name="coping" value="meditation">Meditation</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="coping" value="timeManagement">Time Management</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="coping" value="petCat">Pet a cat</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="coping" value="bath">Take a bath</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
+      <span id="stressHigh">
+        <p>Your stress level is through the roof!!! Take a deep breath and try these suggestions:</p>
+      </span>
+      <span id="stressMed">
+        <p>Your stress level is about average. Try these suggestions:</p>
+      </span>
+      <span id="stressLow">
+        <p>You are chilled as fuck, yo! Maybe get a job and stop disappointing your mother!</p>
+      </span>
+    </div>
+  </body>
+</html>
